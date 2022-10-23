@@ -1,0 +1,175 @@
+*{margin: 0;padding: 0;box-sizing: border-box;border: none;outline: none;}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    --bg: rgb(30,50,130);
+    --bg2: rgb(20,20,20);
+    --bg3: rgb(50,50,50);
+    --color: rgb(200,200,200);
+    --color2: white;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: var(--bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.light {
+    --color: black;
+    --color2: black;
+    --bg2: rgb(255,255,255);
+    --bg3: rgb(200,200,200);
+}
+
+.form {
+    background-color: var(--bg2);
+
+    width: 100vw;
+    max-width: 500px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    padding: 20px;
+
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+    position: relative;
+
+    transition: all ease 3s;
+}
+
+.top h1 {
+    color: var(--color2);
+    font-size: 30px;
+    text-align: center;
+}
+
+.pw {
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+
+.pw span {
+    color: var(--color);
+    font-size: 18px;
+    text-align: center;
+
+    display: block;
+
+    width: 100%;
+}
+
+.bottom {
+    margin-top: 10px;
+}
+
+.form-control {
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control label {
+    color: var(--color);
+    font-size: 15px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+    background-color: rgb(100,100,255);
+
+    width: 100%;
+
+    padding: 10px 20px;
+
+    display: block;
+
+    margin: 20px auto 0px auto;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all ease 500ms;
+}
+
+button:hover {
+    background-color: rgb(100,100,130);
+}
+
+
+.ad {
+    color: var(--color);
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    
+    display: block;
+    
+    width: 100%;
+}
+
+.ad-wrapper {
+    transition: all ease 0.5s;
+    transition-delay: 0.3s;
+
+    overflow: hidden;
+}
+
+.ad-control {
+    margin-top: 20px;
+}
+
+.ad-control p {
+    color: var(--color);
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+.ad-control input {
+    color: var(--color);
+    font-size: 18px;
+
+    padding: 8px;
+
+    background-color: var(--bg3);
+
+    width: 100%;
+    
+    border-radius: 5px;
+}
+
+.hidden {
+    transform: translateX(-100px);
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+}
+
+.hidden2 {
+    transform: translateX(100px);
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+}
+
+#test {
+    transition: all ease 0.5s;
+}

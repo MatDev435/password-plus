@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Plus</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form" id="form">
+        <div class="top">
+            <h1>Password Plus</h1>
+
+            <div class="pw" id="pw-div">
+                <span id="pw"></span>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div id="test">
+                <div class="form-control">
+                    <label for="length">Tamanho: <span id="len-text">10</span></label>
+                    <input type="range" id="length" value="10" min="2" max="30">
+                </div>
+
+                <div class="form-control">
+                    <label for="upper">Letras maiúsculas</label>
+                    <input type="checkbox" id="upper" checked="true">
+                </div>
+
+                <div class="form-control">
+                    <label for="lower">Letras minúsculas</label>
+                    <input type="checkbox" id="lower" checked="true">
+                </div>
+
+                <div class="form-control">
+                    <label for="num">Números</label>
+                    <input type="checkbox" id="num" checked="true">
+                </div>
+
+                <div class="form-control">
+                    <label for="symbol">Símbolos</label>
+                    <input type="checkbox" id="symbol" checked="true">
+                </div>
+
+                <div class="form-control">
+                    <label for="symbol">Esconder senha</label>
+                    <input type="checkbox" id="hide">
+                </div>
+            </div>
+
+            <a href="#" class="ad" id="ad">Avançados</a>
+
+            <div class="ad-wrapper hidden" id="ad-wrapper">
+                <div class="ad-control">
+                    <p>Letras maiúsculas</p>
+                    <input type="text" id="ad-upper" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+                </div>
+                
+                <div class="ad-control">
+                    <p>Letras minúsculas</p>
+                    <input type="text" id="ad-lower" value="abcdefghijklmnopqrstuvwxyz">
+                </div>
+                
+                <div class="ad-control">
+                    <p>Números</p>
+                    <input type="text" id="ad-number" value="0123456789">
+                </div>
+                
+                <div class="ad-control">
+                    <p>Símbolos</p>
+                    <input type="text" id="ad-symbol" value="!@#$%&_+ç/;-|\°{}()[]">
+                </div>
+            </div>
+                
+            <button id="gen">Gerar senha</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
